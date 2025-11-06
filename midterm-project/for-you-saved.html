@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法源法律網 — For You / Saved</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <button id="menuToggle" class="icon-btn" aria-label="開啟主選單" aria-controls="offcanvasNav" aria-expanded="false">
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <div class="search-inline">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#111" stroke-width="2"/><path d="M20 20l-4-4" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="SEARCH" aria-label="搜尋" />
+    </div>
+    <div class="brand"><a href="/index.html">法源法律網</a></div>
+    <div class="account">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="#111" stroke-width="2"/><path d="M4 20c2-4 14-4 16 0" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+      <a href="#" aria-label="My account">MY ACCOUNT</a>
+    </div>
+  </div>
+</header>
+<!-- Off-canvas Drawer -->
+<div id="offcanvasNav" class="offcanvas" aria-hidden="true">
+  <div class="backdrop" data-close="true"></div>
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title" id="drawerTitle">Home</div>
+      <button class="drawer-close" id="drawerClose" aria-label="關閉選單">×</button>
+    </div>
+    <div class="drawer-body">
+      <a class="menu-item" href="#"><h4>精選六法</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>英譯法規</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>司法判解</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>行政函釋</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>裁判書</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>起訴書</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>法學論著</h4><div class="desc">Menu description.</div></a>
+    </div>
+  </aside>
+</div>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="index.html">HOME</a>
+    <a href="for-you-saved.html" class="is-active">FOR YOU</a>
+  </div>
+</nav>
+
+<main class="container" style="padding:20px 0 40px">
+  <div style="display:flex;align-items:center;gap:18px;margin:6px 0 16px">
+    <div class="tabs">
+      <a class="tab is-active" href="for-you-saved.html">SAVED</a>
+      <a class="tab" href="for-you-following.html">FOLLOWING</a>
+    </div>
+  </div>
+
+  <section class="card" style="overflow:hidden">
+    <div class="saved-item">
+      <div>
+        <div class="added">ADDED 20XX/xx/xx</div>
+        <div class="thumb" aria-hidden="true" style="width:100%"></div>
+      </div>
+      <div>
+        <h3 class="card-title">標題標題標題標題</h3>
+        <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+      </div>
+    </div>
+    <div class="saved-item">
+      <div>
+        <div class="added">ADDED 20XX/xx/xx</div>
+        <div class="thumb" aria-hidden="true" style="width:100%"></div>
+      </div>
+      <div>
+        <h3 class="card-title">標題標題標題標題</h3>
+        <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

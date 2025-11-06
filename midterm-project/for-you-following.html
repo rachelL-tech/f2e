@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法源法律網 — For You / Following</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <button id="menuToggle" class="icon-btn" aria-label="開啟主選單" aria-controls="offcanvasNav" aria-expanded="false">
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <div class="search-inline">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#111" stroke-width="2"/><path d="M20 20l-4-4" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="SEARCH" aria-label="搜尋" />
+    </div>
+    <div class="brand"><a href="/index.html">法源法律網</a></div>
+    <div class="account">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="#111" stroke-width="2"/><path d="M4 20c2-4 14-4 16 0" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+      <a href="#" aria-label="My account">MY ACCOUNT</a>
+    </div>
+  </div>
+</header>
+<!-- Off-canvas Drawer -->
+<div id="offcanvasNav" class="offcanvas" aria-hidden="true">
+  <div class="backdrop" data-close="true"></div>
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title" id="drawerTitle">Home</div>
+      <button class="drawer-close" id="drawerClose" aria-label="關閉選單">×</button>
+    </div>
+    <div class="drawer-body">
+      <a class="menu-item" href="#"><h4>精選六法</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>英譯法規</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>司法判解</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>行政函釋</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>裁判書</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>起訴書</h4><div class="desc">Menu description.</div></a>
+      <a class="menu-item" href="#"><h4>法學論著</h4><div class="desc">Menu description.</div></a>
+    </div>
+  </aside>
+</div>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="index.html">HOME</a>
+    <a href="for-you-saved.html" class="is-active">FOR YOU</a>
+  </div>
+</nav>
+
+<main class="container" style="padding:20px 0 40px">
+  <div style="display:flex;align-items:center;gap:18px;margin:6px 0 16px">
+    <div class="tabs">
+      <a class="tab" href="for-you-saved.html">SAVED</a>
+      <a class="tab is-active" href="for-you-following.html">FOLLOWING</a>
+    </div>
+    <div class="subtle">包含您追蹤的作者與議題</div>
+    <div class="sort" style="margin-left:auto">
+      <span>SORT BY</span> <a class="is-active" href="#">LATEST</a> <a href="#">HOT</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <section>
+      <div class="grid cols-3">      
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+        <article class="card teaser">
+          <div class="x" aria-hidden="true">×</div>
+          <div class="thumb" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-meta">作者或議題</div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+            <div class="hr"></div>
+            <h3 class="card-title">標題標題標題標題</h3>
+            <p>內文內文內文內文內文內文內文內文內文</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="box">
+        <div class="search-inline" style="width:100%">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#111" stroke-width="2"/><path d="M20 20l-4-4" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+          <input style="flex:1" type="search" placeholder="找熱門文章/找更多收藏" aria-label="搜尋" />
+        </div>
+      </div>
+
+      <div class="box">
+        <h4>Trending topics</h4>
+        <div class="topic">
+          <span>公司法施行細則修正</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>公開發行公司內控準則增訂</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>洗錢防制法配合國際規範再修正</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>妨害名譽之「相當理由」判準</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>工時彈性調整函釋</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>旅運契約定型化條款說明</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>刑法部分條文修正草案</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>告訴代理權限範圍釋示</span>
+          <button class="btn-sm">FOLLOW</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <h4>Recommended authors</h4>
+        <div class="topic">
+          <span>姓名</span>
+          <button class="btn-sm primary">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>姓名</span>
+          <button class="btn-sm primary">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>姓名</span>
+          <button class="btn-sm primary">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>姓名</span>
+          <button class="btn-sm primary">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>姓名</span>
+          <button class="btn-sm primary">FOLLOW</button>
+        </div>
+        <div class="topic">
+          <span>姓名</span>
+          <button class="btn-sm primary">FOLLOW</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

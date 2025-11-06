@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法源法律網 — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <button id="menuToggle" class="icon-btn" aria-label="開啟主選單" aria-controls="offcanvasNav" aria-expanded="false">
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <div class="search-inline">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#111" stroke-width="2"/><path d="M20 20l-4-4" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" placeholder="SEARCH" aria-label="搜尋" />
+    </div>
+
+    <div class="brand"><a href="/index.html">法源法律網</a></div>
+
+    <div class="account">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="#111" stroke-width="2"/><path d="M4 20c2-4 14-4 16 0" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+      <a href="#" aria-label="My account">MY ACCOUNT</a>
+    </div>
+  </div>
+</header>
+<!-- Off-canvas Drawer -->
+<div id="offcanvasNav" class="offcanvas" aria-hidden="true">
+  <div class="backdrop" data-close="true"></div>
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title" id="drawerTitle">Home</div>
+      <button class="drawer-close" id="drawerClose" aria-label="關閉選單">×</button>
+    </div>
+    <div class="drawer-body">
+      <a class="menu-item" href="#"><h4>精選六法</h4><div class="desc">（顯示最新資料）</div></a>
+      <a class="menu-item" href="#"><h4>英譯法規</h4><div class="desc">（顯示最新資料）</div></a>
+      <a class="menu-item" href="#"><h4>司法判解</h4><div class="desc">（顯示最新資料）</div></a>
+      <a class="menu-item" href="#"><h4>行政函釋</h4><div class="desc">（顯示最新資料）</div></a>
+      <a class="menu-item" href="#"><h4>裁判書</h4><div class="desc">（顯示最新資料）</div></a>
+      <a class="menu-item" href="#"><h4>起訴書</h4><div class="desc">（顯示最新資料）</div></a>
+      <a class="menu-item" href="#"><h4>法學論著</h4><div class="desc">（顯示最新資料）</div></a>
+    </div>
+  </aside>
+</div>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="index.html" class="is-active">HOME</a>
+    <a href="for-you-saved.html">FOR YOU</a>
+  </div>
+</nav>
+
+<main class="container" style="padding:20px 20px 40px">
+  
+  <section class="news-switcher">
+    <!-- 分類 pills -->
+    <div class="news-pills" id="news-tabs" role="tablist" aria-label="新聞分類">
+      <a href="#" role="tab" aria-selected="true" class="pill is-active" data-cat="law">法律新聞</a>
+      <a href="#" role="tab" class="pill" data-cat="reg">法規</a>
+      <a href="#" role="tab" class="pill" data-cat="case">判例解釋</a>
+      <a href="#" role="tab" class="pill" data-cat="letter">函釋</a>
+      <a href="#" role="tab" class="pill" data-cat="draft">草案</a>
+    </div>
+    <!-- Trending：數字圓籤 -->
+    <article class="rank" aria-labelledby="trending-h">
+      <h3 id="trending-h">Trending</h3>
+      <ol id="trending-list">
+        <!-- JS 注入 <li><span class="num">1</span><a>標題</a></li> -->
+      </ol>
+      <div class="news-more">
+      <a id="news-more-link" class="btn-link" href="#">更多法律新聞</a>
+      </div>
+    </article>
+    <!-- Latest：日期膠囊籤 -->
+    <article class="rank" aria-labelledby="latest-h" style="margin-top:24px">
+      <h3 id="latest-h">Latest</h3>
+      <ol id="latest-list">
+        <!-- JS 注入 <li><span class="date">11/06</span><a>標題</a></li> -->
+      </ol>
+      <div class="news-more">
+      <a id="news-more-link" class="btn-link" href="#">更多法律新聞</a>
+      </div>
+    </article>
+  </section> 
+
+  <section style="margin-top:32px">
+    <h2 style="margin:0 10px 12px">Trending Article</h3>
+    <div class="grid cols-3">
+      <article class="card author-card">
+        <div class="avatar" aria-hidden="true"><img src="https://static.thenounproject.com/png/19279-200.png" alt="quote"></div>
+        <div>
+          <p>個人見解個人見解個人見解個人見解個人見解個人見解個人見解</p>
+          <div class="card-meta">
+            <div class="avatar"><img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?semt=ais_hybrid&w=740&q=80" alt="human_face"> </div>
+            <p>姓名</p>
+          </div>
+        </div>
+      </article>
+      <article class="card author-card">
+        <div class="avatar" aria-hidden="true"><img src="https://static.thenounproject.com/png/19279-200.png" alt="quote"></div>
+        <div>
+          <p>個人見解個人見解個人見解個人見解個人見解個人見解個人見解</p>
+          <div class="card-meta">
+            <div class="avatar"><img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?semt=ais_hybrid&w=740&q=80" alt="human_face"> </div>
+            <p>姓名</p>
+          </div>
+        </div>
+      </article>
+      <article class="card author-card">
+        <div class="avatar" aria-hidden="true"><img src="https://static.thenounproject.com/png/19279-200.png" alt="quote"></div>
+        <div>
+          <p>個人見解個人見解個人見解個人見解個人見解個人見解個人見解</p>
+          <div class="card-meta">
+            <div class="avatar"><img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?semt=ais_hybrid&w=740&q=80" alt="human_face"> </div>
+            <p>姓名</p>
+          </div>
+        </div>
+      </article>
+      <article class="card author-card">
+        <div class="avatar" aria-hidden="true"><img src="https://static.thenounproject.com/png/19279-200.png" alt="quote"></div>
+        <div>
+          <p>個人見解個人見解個人見解個人見解個人見解個人見解個人見解</p>
+          <div class="card-meta">
+            <div class="avatar"><img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?semt=ais_hybrid&w=740&q=80" alt="human_face"> </div>
+            <p>姓名</p>
+          </div>
+        </div>
+      </article>
+      <article class="card author-card">
+        <div class="avatar" aria-hidden="true"><img src="https://static.thenounproject.com/png/19279-200.png" alt="quote"></div>
+        <div>
+          <p>個人見解個人見解個人見解個人見解個人見解個人見解個人見解</p>
+          <div class="card-meta">
+            <div class="avatar"><img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?semt=ais_hybrid&w=740&q=80" alt="human_face"> </div>
+            <p>姓名</p>
+          </div>
+        </div>
+      </article>
+      <article class="card author-card">
+        <div class="avatar" aria-hidden="true"><img src="https://static.thenounproject.com/png/19279-200.png" alt="quote"></div>
+        <div>
+          <p>個人見解個人見解個人見解個人見解個人見解個人見解個人見解</p>
+          <div class="card-meta">
+            <div class="avatar"><img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?semt=ais_hybrid&w=740&q=80" alt="human_face"> </div>
+            <p>姓名</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h5><a href="#">公司簡介</a></h5>
+      </div>
+      <div>
+        <h5><a href="#">會員服務</a></h5>
+      </div>
+      <div>
+        <h5><a href="#">論著授權</a></h5>
+      </div>
+      <div>
+        <h5><a href="#">常見問題</a></h5>
+      </div>
+      <div>
+        <h5><a href="#">更多服務</a></h5>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-text">© 20XX 法源法律網 All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#">訂閱電子報</a>
+        <a href="#">F</a>
+      </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
