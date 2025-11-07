@@ -202,13 +202,12 @@ svg.icon{width:18px;height:18px}
 .footer{margin:32px 0 0;background:#efefef;border-top:1px solid var(--line)}
 .footer .container{padding:24px 20px}
 .footer-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
-.footer-grid a:hover{background:#bcbcbc}
-.footer-bottom{
-  display:flex;align-items:center;justify-content:space-between;padding:12px 0 0
-}
-.footer-text{color:var(--muted);font-size:14px}
-.footer-links{display:grid;}
-.footer-links a:hover{background:#bcbcbc}
+.footer-grid a:hover{text-decoration:underline;}
+.footer-text{color:var(--muted);font-size:14px;text-align:center;}
+.footer-bottom{display:flex;align-items:center;}
+.footer-text{flex: 1;}
+.footer-links{display:grid;margin-left:auto;display:flex; gap:12px;}
+.footer-links a:hover{text-decoration:underline;}
 
 
 /* RWD */
