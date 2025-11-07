@@ -4,7 +4,7 @@
   --text:#111111;
   --muted:#666666;
   --line:#e6e6e6;
-  --accent:#b08c4f; /* default "legal gold" — customizable */
+  --accent:#b08c4f; /* 預設 "gold" */
   --accent-weak:#e7dcc3;
   --chip:#efefef;
   --chip-text:#333;
@@ -25,7 +25,7 @@ img{max-width:100%;display:block}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
 .hidden{position:absolute;clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap;border:0;padding:0;margin:-1px}
 
-/* ===== Header */
+/* Header */
 .topbar{
   background:#fff;
   border-bottom:1px solid var(--line);
@@ -46,10 +46,9 @@ img{max-width:100%;display:block}
 .account a{padding:6px 10px;border-radius:999px}
 .account a:hover{background:#ededed}
 
-/* simple SVG icons */
 svg.icon{width:18px;height:18px}
 
-/* ===== Primary nav (tabs) */
+/* Primary nav */
 .primary-nav{
   background:#fff;border-bottom:1px solid var(--line)
 }
@@ -60,14 +59,14 @@ svg.icon{width:18px;height:18px}
 .primary-nav a.is-active{border-color:var(--accent);color:#000}
 .primary-nav a:hover{border-color:var(--accent-weak)}
 
-/* ===== Page header */
+/* Page header */
 .page-title{
   font-family: Georgia, "Times New Roman", serif;
   font-size:36px; font-weight:700; letter-spacing:.04em; margin:24px 0 8px;
 }
 .subtle{color:var(--muted);font-size:14px}
 
-/* ===== Grids & cards */
+/* 統一規定 Grids & cards */
 .grid{display:grid;gap:20px}
 .grid.cols-2{grid-template-columns:repeat(2,1fr)}
 .grid.cols-3{grid-template-columns:repeat(3,1fr)}
@@ -78,6 +77,7 @@ svg.icon{width:18px;height:18px}
   background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
   box-shadow:var(--shadow); overflow:hidden;
 }
+.card:hover{transform: scale(1.03);box-shadow: 0 10px 24px rgba(0,0,0,.18)};
 
 .card-body{padding:16px 16px 18px}
 .card-title{font-weight:700;margin:0 0 6px}
@@ -86,13 +86,6 @@ svg.icon{width:18px;height:18px}
   background:linear-gradient(135deg,#ddd,#cfcfcf); border-bottom:1px solid var(--line);
   aspect-ratio:16/9;
 }
-
-/* news */
-.news{display:flex;gap:28px;align-items:center;justify-content:center}
-.news a{
-  padding:14px 6px;border-bottom:3px solid transparent;font-weight:600;color:#222;flex:1
-}
-.news a:hover{border-color:var(--accent-weak)}
 
 /* ranking list */
 .rank{
@@ -126,7 +119,7 @@ svg.icon{width:18px;height:18px}
 .rank a{display:inline-block;line-height:1.5;font-weight:400}
 .rank a:hover{text-decoration:underline}
 
-/* --- 分類 pills --- */
+/* pills */
 .news-pills{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin:8px 0 10px}
 .pill{
   --pill-bg:#e9f0ff; --pill-active:#4c7ad8;
@@ -141,7 +134,7 @@ svg.icon{width:18px;height:18px}
   bottom:-8px; border:8px solid transparent; border-top-color:var(--pill-active);
 }
 
-/* --- 清單樣式 --- */
+/* 清單樣式 */
 .news-list{list-style:none;margin:0;padding:8px 0}
 .news-list li{
   display:grid; grid-template-columns:140px 110px 1fr; gap:18px;
@@ -159,16 +152,17 @@ svg.icon{width:18px;height:18px}
 }
 .btn-link:hover{background:#eef4ff}
 
-/* author grid in home */
+/* author grid */
 .author-card{display:flex;gap:12px;align-items:flex-start;padding:14px}
 .author-card .avatar{width:36px;height:36px;border-radius:8px}
+.author-card a:hover{text-decoration:underline}
 .card-meta{
   display:flex;align-items:center;gap:6px;margin-top:8px;
 }
 .card-meta .img{
   width:100%;height:100%;object-fit:cover;border-radius:50%;object-fit:cover;margin-right:6px;
 }
-/* ===== For You layout */
+/* For You 頁*/
 .layout{
   display:grid; gap:24px; grid-template-columns:1fr 320px;
 }
@@ -181,7 +175,8 @@ svg.icon{width:18px;height:18px}
 .sort a{padding:6px 10px;border-radius:8px;border:1px solid var(--line)}
 .sort a.is-active{background:#111;color:#fff;border-color:#111}
 
-/* article teaser cards (Following page) */
+/* Following page */
+/* article teaser cards*/
 .teaser .thumb{border:0;border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}
 .teaser .card-body{padding:12px 14px 16px}
 .teaser .x{position:absolute;right:10px;top:10px;font-weight:700;opacity:.5}
@@ -216,7 +211,7 @@ svg.icon{width:18px;height:18px}
 .footer-links a:hover{background:#bcbcbc}
 
 
-/* Responsive */
+/* RWD */
 @media (max-width: 1100px){
  .grid.cols-4{grid-template-columns:repeat(3,1fr)}
  .layout{grid-template-columns:1fr}
@@ -232,7 +227,7 @@ svg.icon{width:18px;height:18px}
  .search-inline input{width:140px}
 }
 
-/* === Off-canvas Drawer (左側抽屜選單) === */
+/* Off-canvas Drawer */
 .offcanvas{position:fixed;inset:0;z-index:999;pointer-events:none;}
 .offcanvas .drawer{
   position:absolute;left:0;top:0;height:100%;width:330px;max-width:90vw;
