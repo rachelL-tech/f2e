@@ -147,4 +147,26 @@ function initNewsSwitcher() {
   });
 
   render('law'); // 預設載入法律新聞
+
+  // ========== 首頁：trending文字淡入上移 ==========
+  const trending = document.getElementById('trending');
+  const items = trending.querySelectorAll('.reveal');
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      // 讓該區塊的所有 .reveal 依序顯示
+      items.forEach((el, i) => {
+        el.style.transitionDelay = `${i * 60}ms`;
+        el.classList.add('is-visible');
+      });
+      io.unobserve(entry.target); // 觸發一次就不再觀察
+    });
+  }, {
+    root: null,
+    threshold: 0.2,           // 區塊有 20% 進入視窗就觸發
+    rootMargin: '0px 0px -10% 0px'
+  });
+
+  io.observe(trending);
 }
